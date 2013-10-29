@@ -1,0 +1,25 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  /*border: 1px dotted black;*/
+}
+th {
+  text-align: left;
+}
+
+.pink_container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 20px 20px 20px 20px;
+  background-color: pink;
+  /*border: 1px dotted black;*/
+}
+
+.grey_container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 20px 20px 20px 20px;
+  background-color: gray;
+  /*border: 1px dotted black;*/
+}
