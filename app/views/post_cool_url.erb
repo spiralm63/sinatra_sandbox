@@ -2,6 +2,11 @@
 
   <h1> You've landed on /post_cool_url... Welcome!</h1>
 
-    <p> You entered <%=params[:user_input]%></p>
+    <p> You entered <%=params[:foobars][:user_input]%></p>
+    <ul>
+      <% params[:foobars][:hobby].each do |hobby| %>
+        <li><%= hobby %></li>
+      <% end %>
+    </ul>
 
 </div>

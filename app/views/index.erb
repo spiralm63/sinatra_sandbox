@@ -1,36 +1,15 @@
 <div class="container">
- <!--  <h1>Welcome, Missy, to Sinatra!</h1>
-  <p>Hello, world!</p>
-
-  <table>
-    <tr>
-      <th>File Description</th>
-      <th>File Location</th>
-    </tr>
-    <tr>
-      <td>This view file</td>
-      <td><code><%= __FILE__.gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The layout file</td>
-      <td><code><%= File.expand_path('../layout.erb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The current controller</td>
-      <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-  </table> -->
 
 <h1> These are our forms </h1>
 <div class="pink_container">
-<form name="get form" action="/cool_url" method = "get">
-  Enter a word: <input type ="text" name ="user_input">
+<form name="fruit_form" action="/cool_url" method = "get">
+  Enter a word: <input type ="text" name ="preferences[user_input]">
   <br>
   Pick your favorite fruit:<br>
-  <input type="radio" name="fruit" value="apples">Apples<br>
-  <input type="radio" name="fruit" value="peaches">Peaches<br>
-  <input type="radio" name="fruit" value="pears">Pears<br>
-  <input type="radio" name="fruit" value="plums">Plums<br>
+  <input type="radio" name="preferences[fruit]" value="apples">Apples<br>
+  <input type="radio" name="preferences[fruit]" value="peaches">Peaches<br>
+  <input type="radio" name="preferences[fruit]" value="pears">Pears<br>
+  <input type="radio" name="preferences[fruit]" value="plums">Plums<br>
 
   <input type="submit" value="click me">
 </form><br>
@@ -40,12 +19,12 @@
 <div class="grey_container">
 
 <form name="post form" action="/cool_url" method = "post">
-  Enter a word: <input type ="text" name ="user_input"><br>
+  Enter a word: <input type ="text" name ="foobars[user_input]"><br>
   Check the hobbies you enjoy:<br>
-  <input type="checkbox" name="hobby" value="Sports">Sports<br>
-  <input type="checkbox" name="hobby" value="Reading">Reading<br>
-  <input type="checkbox" name="hobby" value="Drinking Wine">Wine<br>
-  <input type="checkbox" name="hobby" value="Cooking">Cooking<br>
+  <input type="checkbox" name="foobars[hobby][]" value="Sports">Sports<br>
+  <input type="checkbox" name="foobars[hobby][]" value="Reading">Reading<br>
+  <input type="checkbox" name="foobars[hobby][]" value="Drinking Wine">Wine<br>
+  <input type="checkbox" name="foobars[hobby][]" value="Cooking">Cooking<br>
   <input type="submit" value="click me">
 </form>
 
